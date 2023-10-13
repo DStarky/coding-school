@@ -7,6 +7,11 @@
 
   &__container {
     text-align: center;
+
+    @media screen and (min-width: 768px) {
+      text-align: left;
+      margin: 0 0 2rem 0;
+    }
   }
 
   &__title {
@@ -14,7 +19,6 @@
     margin: 0 auto 4.6rem;
     text-align: center;
     position: relative;
-
     font-size: clamp(2.4rem, 5vw, 4.6rem);
 
     &::after {
@@ -29,7 +33,17 @@
       transform: translateX(-50%);
     }
 
+    @media screen and (min-width: 768px) {
+      text-align: left;
+      margin: 0 0 4.6rem 0;
 
+      &::after {
+        content: '';
+        left: 0;
+        transform: translateX(0);
+      }
+
+    }
   }
 
   &__backet {
@@ -48,10 +62,16 @@
     margin: 0 auto;
     font-size: clamp(1.2rem, 2.5vw, 1.6rem);
     margin-bottom: 2rem;
+
+    @media screen and (min-width: 768px) {
+      text-align: left;
+      margin: 0 0 2rem 0;
+    }
   }
 
   &__btn {
     position: relative;
+
     &::after {
       content: '';
       height: 2.4rem;
