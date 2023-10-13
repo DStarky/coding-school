@@ -1,9 +1,9 @@
 .hero {
   padding-top: 10rem;
-  min-height: 66rem;
+  min-height: 70rem;
   background-image: url('/images/hero-bg.png');
   background-repeat: no-repeat;
-  background-position: 38.5% 15%;
+  background-position: 38.5% 10%;
 
   &__container {
     text-align: center;
@@ -47,19 +47,22 @@
     text-align: center;
     margin: 0 auto;
     font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+    margin-bottom: 2rem;
   }
 
   &__btn {
+    position: relative;
     &::after {
       content: '';
-      height: 1px;
-      width: 100%;
-      max-width: 36.5rem;
-      background-color: #DEDEDE;
+      height: 2.4rem;
+      width: 2.4rem;
       position: absolute;
-      bottom: -2.8rem;
-      left: 50%;
-      transform: translateX(-50%);
+      background-image: url('/icons/arrow.svg');
+      background-size: cover;
+      right: 4.5rem;
+      top: 50%;
+      transform: translateY(-50%);
+
     }
   }
 }
