@@ -1,0 +1,13 @@
+.navigation {
+  flex-grow: 1;
+
+  &__list {
+    list-style-type: none;
+    display: flex;
+    gap: 4rem;
+  }
+
+  &__item {}
+
+  &__link {}
+}

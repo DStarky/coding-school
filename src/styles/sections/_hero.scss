@@ -1,5 +1,5 @@
 .hero {
-  padding-top: 10rem;
+  padding-top: 1rem;
   min-height: 70rem;
   background-image: url('/images/hero-bg.png');
   background-color: #f9f8fd;
@@ -37,7 +37,7 @@
     @media screen and (min-width: 1401px) {
       background-image: url('/images/computer.png');
       background-repeat: no-repeat;
-      background-position: right 0;
+      background-position: right 12rem;
     }
   }
 

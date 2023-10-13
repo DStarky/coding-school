@@ -1,0 +1,19 @@
+.header {
+  padding: 1.6rem 2rem;
+  border-radius: 10rem;
+  background-color: $color-bg-white;
+  margin-bottom: 7rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+
+
+  &__logo-link {
+    margin-right: 6rem;
+  }
+
+  &__link {}
+
+  &__button {}
+}
+
