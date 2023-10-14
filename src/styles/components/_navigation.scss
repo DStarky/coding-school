@@ -1,13 +1,25 @@
 .navigation {
   flex-grow: 1;
+  display: none;
+
+  @media screen and (min-width: 769px) {
+    display: block;
+  }
 
   &__list {
     list-style-type: none;
     display: flex;
-    gap: 4rem;
+    gap: 2rem;
+
+    @media screen and (min-width: 999px) {
+      gap: 4rem;
+    }
   }
 
-  &__item {}
+  &__item {
+    font-size: 1.3rem;
+    flex-shrink: 0;
+  }
 
   &__link {}
 }

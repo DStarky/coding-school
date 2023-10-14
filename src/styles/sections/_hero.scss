@@ -64,6 +64,10 @@
     position: relative;
     font-size: clamp(2.4rem, 5vw, 4.6rem);
 
+    @media screen and (min-width: 769px) {
+      max-width: 62rem;
+    }
+
     &::after {
       content: '';
       height: 1px;
@@ -106,6 +110,8 @@
     font-size: clamp(1.2rem, 2.5vw, 1.6rem);
     margin-bottom: 2rem;
 
+
+
     @media screen and (min-width: 769px) {
       text-align: left;
       margin: 0 0 2rem 0;
@@ -130,14 +136,14 @@
   }
 }
 
-#habit-br {
-  @media screen and (min-width: 769px) {
-    display: none;
+// #habit-br {
+//   @media screen and (min-width: 769px) {
+//     display: none;
 
-  }
+//   }
 
-  @media screen and (min-width: 846px) {
-    display: inline;
+//   @media screen and (min-width: 846px) {
+//     display: inline;
 
-  }
-}
+//   }
+// }

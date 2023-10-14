@@ -9,11 +9,26 @@
 
 
   &__logo-link {
-    margin-right: 6rem;
+    margin-right: 2rem;
+    flex-shrink: 0;
+
+    @media screen and (min-width: 999px) {
+      margin-right: 6rem;
+    }
   }
 
-  &__link {}
+  &__link {
+    font-size: 1.2rem;
+    display: none;
+
+    @media screen and (min-width: 769px) {
+      display: inline;
+    }
+  }
 
   &__button {}
-}
 
+  &__menu {
+
+  }
+}
