@@ -1,10 +1,10 @@
 .hero {
   padding-top: 1rem;
-  min-height: 80rem;
+  min-height: 67rem;
   background-image: url('/images/hero-bg.png');
   background-color: #f9f8fd;
   background-repeat: no-repeat;
-  background-position: center -15%;
+  background-position: center 8%;
   overflow: hidden;
   position: relative;
 
@@ -19,12 +19,9 @@
     z-index: -1;
   }
 
-  @media screen and (min-width: 662px) {
-    background-position: center -20%;
-  }
 
   @media screen and (min-width: 769px) {
-    min-height: 70rem;
+    min-height: 60rem;
     background-image: none;
     background-color: transparent;
   }
@@ -59,12 +56,13 @@
 
   &__title {
     max-width: 62rem;
-    margin: 0 auto 4.6rem;
+    margin: 0 auto 3rem;
     text-align: center;
     position: relative;
     font-size: clamp(2.4rem, 5vw, 4.6rem);
 
     @media screen and (min-width: 769px) {
+      margin: 0 auto 4.6rem;
       max-width: 62rem;
     }
 
