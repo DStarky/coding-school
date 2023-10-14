@@ -56,11 +56,19 @@
     font-size: 1.3rem;
     flex-shrink: 0;
 
+    transition: color 0.2s ease;
 
 
     @media screen and (min-width: 769px) {
       display: flex;
       gap: 2rem;
+    }
+
+
+    @media (any-hover: hover) {
+      &:hover {
+        color: $color-bg-orange;
+      }
     }
   }
 

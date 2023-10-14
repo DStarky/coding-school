@@ -26,9 +26,16 @@
     font-size: 1.2rem;
     display: none;
     cursor: pointer;
+    transition: color 0.2s ease;
 
     @media screen and (min-width: 769px) {
       display: inline;
+    }
+
+    @media (any-hover: hover) {
+      &:hover {
+        color: $color-bg-orange;
+      }
     }
   }
 
