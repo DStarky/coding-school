@@ -1,4 +1,4 @@
-export function toggleMenu(node) {
-  console.log('work')
-  node.classList.toggle('change');
+export function toggleMenu(button, menu) {
+  button.classList.toggle('change');
+  menu.classList.toggle('change');
 }
