@@ -1,7 +1,7 @@
 .navigation {
   flex-grow: 1;
   position: fixed;
-  height: 80%;
+  height: 90%;
   width: 80%;
   background-color: $color-bg-white;
   top: 1rem;
@@ -37,11 +37,14 @@
 
   &__list {
     list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: 100%;
 
 
     @media screen and (min-width: 769px) {
-      display: flex;
-      gap: 2rem;
+      flex-direction: row;
     }
 
     @media screen and (min-width: 999px) {
@@ -53,18 +56,22 @@
     font-size: 1.3rem;
     flex-shrink: 0;
 
-    &:not(:last-child) {
-      margin-bottom: 3rem;
-    }
+
 
     @media screen and (min-width: 769px) {
       display: flex;
       gap: 2rem;
-
-      &:not(:last-child) {
-        margin-bottom: 0;
-      }
     }
   }
 
+  &__button {
+    margin-top: auto;
+    display: inline-block;
+    align-self: start;
+    font-size: 1.6rem;
+
+    @media screen and (min-width: 769px) {
+      display: none;
+    }
+  }
 }
