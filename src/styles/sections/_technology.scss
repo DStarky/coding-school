@@ -1,0 +1,82 @@
+.technology {
+  padding-top: 11rem;
+  // background-color: $color-bg-white;
+  padding-bottom: 10rem; // УБРАТЬ ПОТОМ!!
+  background-image: url('/images/technology.svg');
+  background-position: top;
+  margin-top: -8rem;
+  position: relative;
+  z-index: 2;
+
+  &__title {
+    text-align: center;
+    margin-bottom: 3.5rem;
+  }
+
+  &__content {
+    background-color: $color-bg-gray;
+    border-radius: 4.8rem;
+    display: flex;
+    gap: 6rem;
+    padding: 4rem 11rem 0;
+  }
+
+  &__cover {}
+
+  &__img {
+    max-width: 41rem;
+  }
+
+  &__stack {}
+
+  &__list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    color: $color-bg-white;
+    margin: 4rem 0 2rem;
+  }
+
+  &__item {
+    padding: 1.5rem 3rem;
+    border-radius: 5rem;
+    display: inline-block;
+  }
+
+  &__text {
+    max-width: 40rem;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 125%;
+  }
+}
+
+
+.item-blue {
+  background-color: $color-bg-tech-blue;
+}
+
+.item-yellow {
+  background-color: $color-bg-tech-yellow;
+}
+
+.item-orange {
+  background-color: $color-bg-tech-orange;
+}
+
+.item-green {
+  background-color: $color-bg-tech-green;
+}
+
+.item-lightblue {
+  background-color: $color-bg-tech-lightblue;
+}
+
+.item-darkblue {
+  background-color: $color-bg-tech-darkblue;
+}
+
+.item-purple {
+  background-color: $color-bg-tech-purple;
+}

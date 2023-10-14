@@ -1,6 +1,6 @@
 .hero {
   padding-top: 1rem;
-  min-height: 67rem;
+  min-height: 77rem;
   background-image: url('/images/hero-bg.png');
   background-color: #f9f8fd;
   background-repeat: no-repeat;
@@ -21,7 +21,7 @@
 
 
   @media screen and (min-width: 769px) {
-    min-height: 60rem;
+    min-height: 70rem;
     background-image: none;
     background-color: transparent;
   }
