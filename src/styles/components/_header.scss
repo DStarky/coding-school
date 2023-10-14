@@ -39,7 +39,11 @@
     }
   }
 
-  &__button {}
+  &__button {
+    &.change {
+      visibility: hidden;
+    }
+  }
 
   &__menu {}
 }
