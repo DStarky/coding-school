@@ -1,5 +1,5 @@
 import './src/styles/style.scss'
-import { toggleMenu } from './src/scripts/menu';
+import { toggleMenu } from './src/scripts/toggleMenu';
 
 const menu = document.querySelector('.menu');
 
