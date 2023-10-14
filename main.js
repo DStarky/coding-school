@@ -13,9 +13,11 @@ menu.addEventListener('click', () => {
 })
 
 document.addEventListener('click', function (event) {
-  if (!(navigation.contains(event.target) || menu.contains(event.target))) {
+  const { target } = event;
+
+  if (!(navigation.contains(target) || menu.contains(target))) {
     closeMenu(menu, navigation, entryButton);
-  } else if (event.target.tagName === 'A' || event.target.tagName === 'BUTTON' && navigation.contains(event.target)) {
+  } else if (target.tagName === 'A' || target.tagName === 'BUTTON' && navigation.contains(target)) {
     closeMenu(menu, navigation, entryButton);
   }
 });
