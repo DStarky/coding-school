@@ -15,63 +15,102 @@
 
   &__content {
     background-color: $color-bg-gray;
-    border-radius: 4.8rem;
+    border-radius: 3rem;
     display: flex;
-    align-items: center;
-    gap: 6rem;
-    padding: 0 10rem 0;
+    flex-direction: column;
 
-    @media screen and (min-width: 1200px) {
-      align-items: normal;
+    justify-content: center;
+    gap: 3rem;
+    padding: 1.5rem;
+
+    @media screen and (min-width: 769px) {
+      border-radius: 4.8rem;
+      align-items: center;
+      padding: 0 3rem 3rem;
     }
 
+    @media screen and (min-width: 1000px) {
+      flex-direction: row;
+      padding: 0 3rem 0;
+    }
   }
 
   &__cover {
     margin-top: 4rem;
     flex-shrink: 1;
-    flex-grow: 1;
-    flex-basis: 41rem;
+    display: none;
+
+    @media screen and (min-width: 769px) {
+      display: block;
+    }
   }
 
   &__img {}
 
   &__stack {
-    flex-basis: 47rem;
     flex-shrink: 0;
     flex-grow: 0;
+    gap: 2.5rem;
+    display: flex;
+    flex-direction: column;
+
+
+    @media screen and (min-width: 1000px) {
+      flex-basis: 47rem;
+
+    }
   }
 
   &__list {
+    width: 100%;
     list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-
-    gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
     color: $color-bg-white;
-    margin: 0 0 0 2rem;
-    
-    @media screen and (min-width: 1200px) {
-      margin: 4rem 0 2rem;
+
+    @media screen and (min-width: 1000px) {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      gap: 1rem;
+      justify-content: stretch;
+      margin-bottom: 0;
     }
   }
 
   &__item {
-    padding: 1.5rem 3rem;
+    padding: 1.5rem 2.5rem;
     border-radius: 5rem;
     display: inline-block;
     font-size: 1.4rem;
+    text-align: center;
+
+    @media screen and (min-width: 576px) {
+      font-size: 1.6rem;
+    }
 
     @media screen and (min-width: 769px) {
-      font-size: 1.6rem;
+      padding: 1.5rem 3rem;
+    }
+
+    @media screen and (min-width: 1000px) {
+      text-align: left;
     }
   }
 
   &__text {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 125%;
     display: none;
 
+    @media screen and (min-width: 769px) {
+      display: inline;
+    }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1000px) {
       display: inline;
       max-width: 40rem;
       font-weight: 600;
@@ -85,22 +124,38 @@
 
 .item-blue {
   background-color: $color-bg-tech-blue;
+  grid-column: 1 / 3;
+
 }
 
 .item-yellow {
   background-color: $color-bg-tech-yellow;
+  max-width: 80%;
+
+  @media screen and (min-width: 769px) {
+    max-width: 100%;
+  }
 }
 
 .item-orange {
   background-color: $color-bg-tech-orange;
+  width: 120%;
+  margin-left: -20%;
+
+  @media screen and (min-width: 769px) {
+    width: auto;
+    margin-left: 0;
+  }
 }
 
 .item-green {
   background-color: $color-bg-tech-green;
+  grid-column: 1 / 3;
 }
 
 .item-lightblue {
   background-color: $color-bg-tech-lightblue;
+  grid-column: 1 / 3;
 }
 
 .item-darkblue {
