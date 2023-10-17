@@ -46,8 +46,10 @@
   }
 
   &__button {
+    opacity: 1;
+    
     &.change {
-      visibility: hidden;
+      opacity: 0;
     }
   }
 
