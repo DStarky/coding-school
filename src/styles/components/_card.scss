@@ -1,4 +1,8 @@
 .card {
+  display: grid;
+  grid-template-rows: subgrid;
+  gap: 0;
+
   border-radius: 20px;
   background: $color-bg-gray;
   padding: 2.4rem 1rem 2rem 1rem;
@@ -13,7 +17,8 @@
   }
 
   &__img {
-    display: inline-block;
+    display: block;
+    margin: 0 auto;
     margin-bottom: 1rem;
     width: 4rem;
     height: 4rem;
@@ -28,6 +33,7 @@
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
     text-align: center;
+    text-wrap: balance;
 
     @media screen and (min-width: 769px) {
       font-size: 1.6rem;
