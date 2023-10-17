@@ -8,6 +8,15 @@
   position: relative;
   z-index: 2;
 
+  &__scroll-icon {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: breathe infinite 2s;
+
+  }
+
   &__title {
     text-align: center;
     margin-bottom: 3.5rem;
@@ -164,4 +173,18 @@
 
 .item-purple {
   background-color: $color-bg-tech-purple;
+}
+
+@keyframes breathe {
+  0% {
+    transform: translate(-50%, 0);
+  }
+
+  50% {
+    transform: translate(-50%, -0.5rem);
+  }
+
+  100% {
+    transform: translate(-50%, 0);
+  }
 }
