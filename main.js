@@ -1,6 +1,7 @@
 import './src/styles/style.scss'
 import { toggleMenu } from './src/scripts/toggleMenu';
 import { closeMenu } from './src/scripts/closeMenu';
+import { gridLastChild } from './src/scripts/gridLastChild';
 
 const menu = document.querySelector('.menu');
 const navigation = document.querySelector('.navigation');
@@ -21,3 +22,6 @@ document.addEventListener('click', function (event) {
     closeMenu(menu, navigation, entryButton);
   }
 });
+
+
+gridLastChild()

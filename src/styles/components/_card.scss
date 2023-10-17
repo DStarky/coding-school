@@ -1,0 +1,33 @@
+.card {
+  border-radius: 20px;
+  background: $color-bg-gray;
+  padding: 2.4rem 1rem 2rem 1rem;
+  text-align: center;
+
+  &__img {
+    display: inline-block;
+    margin-bottom: 1rem;
+  }
+
+  &__title {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+
+    @media screen and (min-width: 769px) {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__text {
+    font-size: 0.9rem;
+    line-height: 133%;
+
+    @media screen and (min-width: 769px) {
+      font-size: 1.3rem;
+    }
+  }
+
+  &.full-width {
+    grid-column: 1 / 3;
+  }
+}
