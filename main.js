@@ -2,6 +2,7 @@ import './src/styles/style.scss'
 import { toggleMenu } from './src/scripts/toggleMenu';
 import { closeMenu } from './src/scripts/closeMenu';
 import { gridLastChild } from './src/scripts/gridLastChild';
+import { playVideo } from './src/scripts/playVideo';
 
 const menu = document.querySelector('.menu');
 const navigation = document.querySelector('.navigation');
@@ -24,4 +25,5 @@ document.addEventListener('click', function (event) {
 });
 
 
-gridLastChild()
+gridLastChild();
+playVideo();
