@@ -1,23 +1,83 @@
 .education {
+  background-image: url('/images/circles.png');
+  background-position: 50% 140%;
+  background-repeat: no-repeat;
+  padding-top: 6rem;
+
+  @media screen and (min-width: 769px) {
+    background-position: 45% 120%;
+  }
 
   &__container {}
 
-  &__title {}
+  &__title {
+    font-size: 2.4rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
 
-  &__text {}
+    @media screen and (min-width: 769px) {
+      font-size: 4.6rem;
+      margin-bottom: 2.5rem;
+    }
+  }
 
-  &__video {}
+  &__text {
+    max-width: 64rem;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
 
-  &__advantages {}
+  &__video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    @media screen and (min-width: 769px) {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__advantages {
+    background-color: $color-bg-white;
+    padding: 4rem 2rem;
+    border-radius: 3rem;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    margin-bottom: 2rem;
+
+    @media screen and (min-width: 769px) {
+      padding: 5.5rem;
+      border-radius: 4rem;
+      flex-direction: row;
+      gap: 0;
+      justify-content: space-between;
+      margin-bottom: 2.5rem;
+    }
+  }
 
   &__advantage {}
 
-  &__cta {}
+  &__cta {
+    background-color: $color-bg-white;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2.5rem 2rem;
+    border-radius: 3rem;
+    margin-bottom: 6rem;
+
+    @media screen and (min-width: 769px) {
+      padding: 1.2rem;
+      border-radius: 11rem;
+      flex-direction: row;
+      margin-bottom: 9rem;
+    }
+  }
 
   &__button {}
 
   &__cta-text {}
 }
-
-
-
