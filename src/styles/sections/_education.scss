@@ -4,7 +4,7 @@
   background-repeat: no-repeat;
   padding-top: 6rem;
 
-  @media screen and (min-width: 769px) {
+  @include _769 {
     background-position: 45% 120%;
   }
 
@@ -15,7 +15,7 @@
     margin-bottom: 1.5rem;
     text-align: center;
 
-    @media screen and (min-width: 769px) {
+    @include _769 {
       font-size: 4.6rem;
       margin-bottom: 2.5rem;
     }
@@ -34,7 +34,7 @@
     align-items: center;
     margin-bottom: 2rem;
 
-    @media screen and (min-width: 769px) {
+    @include _769 {
       margin-bottom: 3rem;
     }
   }
@@ -49,7 +49,7 @@
     gap: 5rem;
     margin-bottom: 2rem;
 
-    @media screen and (min-width: 769px) {
+    @include _769 {
       padding: 5.5rem;
       border-radius: 4rem;
       flex-direction: row;
@@ -69,7 +69,7 @@
     border-radius: 3rem;
     margin-bottom: 6rem;
 
-    @media screen and (min-width: 769px) {
+    @include _769 {
       padding: 1.2rem;
       border-radius: 11rem;
       flex-direction: row;

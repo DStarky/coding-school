@@ -48,7 +48,7 @@
       }
     }
 
-    @media screen and (min-width: 769px) {
+    @include _769 {
       max-width: 21%;
     }
   }
@@ -62,7 +62,7 @@
     letter-spacing: -0.3px;
     z-index: 1;
 
-    @media screen and (min-width: 769px) {
+    @include _769 {
       font-size: 2rem;
     }
   }

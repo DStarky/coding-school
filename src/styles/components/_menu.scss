@@ -1,7 +1,7 @@
 .menu {
   display: inline-block;
 
-  @media screen and (min-width: 769px) {
+  @include _769 {
     display: none;
   }
 

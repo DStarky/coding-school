@@ -8,16 +8,16 @@
   justify-content: space-between;
   gap: 1.5rem;
 
-    @media screen and (min-width: 769px) {
-        margin-bottom: 7rem;
-      padding: 1.6rem 2rem;
-      }
+  @include _769 {
+    margin-bottom: 7rem;
+    padding: 1.6rem 2rem;
+  }
 
   &__logo-link {
 
     flex-shrink: 0;
 
-    @media screen and (min-width: 769px) {
+    @include _769 {
       // margin-bottom: 7rem;
 
       margin-right: 2rem;
@@ -34,7 +34,7 @@
     cursor: pointer;
     transition: color 0.2s ease;
 
-    @media screen and (min-width: 769px) {
+    @include _769 {
       display: inline;
     }
 
@@ -47,7 +47,7 @@
 
   &__button {
     opacity: 1;
-    
+
     &.change {
       opacity: 0;
     }

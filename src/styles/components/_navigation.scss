@@ -22,7 +22,7 @@
     font-weight: 600;
   }
 
-  @media screen and (min-width: 769px) {
+  @include _769 {
     position: initial;
     display: block;
     box-shadow: none;
@@ -43,7 +43,7 @@
     height: 100%;
 
 
-    @media screen and (min-width: 769px) {
+    @include _769 {
       flex-direction: row;
     }
 
@@ -59,7 +59,7 @@
     transition: color 0.2s ease;
 
 
-    @media screen and (min-width: 769px) {
+    @include _769 {
       display: flex;
       gap: 2rem;
     }
@@ -78,7 +78,7 @@
     align-self: start;
     font-size: 1.6rem;
 
-    @media screen and (min-width: 769px) {
+    @include _769 {
       display: none;
     }
   }

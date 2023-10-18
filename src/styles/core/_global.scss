@@ -8,7 +8,7 @@ html {
   padding: 0 1rem;
 
 
-  @media screen and (min-width: 769px) {
+  @include _769 {
     max-width: 1220px;
     margin: 0 auto;
     padding: 0 3rem;
