@@ -24,7 +24,7 @@
     flex-direction: column;
     gap: 2rem;
     list-style-type: none;
-    margin-bottom: 7.5rem;
+    margin-bottom: 2rem;
 
     @include _769 {
       flex-direction: row;
@@ -56,7 +56,6 @@
     }
   }
 
-  &__img {}
 
   &__text {
     text-align: center;
@@ -66,6 +65,15 @@
     @include _769 {
       text-align: left;
       max-width: 30rem;
+    }
+  }
+
+  &__turn-icon {
+    display: block;
+    margin: 0 0 2rem 2rem;
+
+    @include _769 {
+      display: none;
     }
   }
 
@@ -82,7 +90,16 @@
     min-width: 72rem;
   }
 
-  &__table {
-    // width: 100%;
+  &__note {
+    font-size: 1.2rem;
+    line-height: 166%;
+    color: $color-font-gray;
+    margin: 2rem 0 4rem 4rem;
+
+    @include _769 {
+      font-size: 16px;
+      line-height: 156%;
+      margin: 2.5rem 0 3.5rem 5.5rem;
+    }
   }
 }
