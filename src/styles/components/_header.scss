@@ -14,8 +14,14 @@
   }
 
   &__logo-link {
+    height: 1.9rem;
+    width: 5.3rem;
 
     flex-shrink: 0;
+
+    img{
+      width: 100%;
+    }
 
     @include _769 {
       // margin-bottom: 7rem;
