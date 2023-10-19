@@ -1,5 +1,6 @@
 .menu {
   display: inline-block;
+  
 
   @include _769 {
     display: none;
@@ -37,7 +38,7 @@
   }
 
   &.change {
-    position: absolute;
+    position: fixed;
     z-index: 3;
     right: 3rem;
   }

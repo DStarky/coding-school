@@ -1,8 +1,78 @@
 .advantage {
 
-  &__count {}
+  position: relative;
+  margin: 0 2rem;
+  flex: 1 1 100%;
 
-  &__title {}
+  @include _769 {
+    max-width: 27rem;
+  }
 
-  &__text {}
+  &__separator {
+    height: 1px;
+    background: $color-bg-gray;
+
+    @include _769 {
+      height: auto;
+      width: 1px;
+    }
+
+
+  }
+
+
+
+  &__count {
+    font-size: 5rem;
+    line-height: 60%;
+    font-weight: 700;
+    color: $color-font-blue;
+    margin-bottom: 2rem;
+
+    @include _769 {
+      font-size: 6rem;
+      line-height: 39%;
+      margin-bottom: 3rem;
+    }
+
+    @include _1200 {
+      font-size: 7.7rem;
+      line-height: 39%;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__title {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 95%;
+    margin-bottom: 1.5rem;
+
+    @include _769 {
+      font-size: 2rem;
+      line-height: 125%;
+      margin-bottom: 1rem;
+    }
+
+    @include _1200 {
+      font-size: 2.4rem;
+      line-height: 125%;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__text {
+    font-size: 1.2rem;
+    line-height: 116%;
+
+    @include _769 {
+      font-size: 1.4rem;
+      line-height: 144%;
+    }
+
+    @include _1200 {
+      font-size: 1.6rem;
+      line-height: 144%;
+    }
+  }
 }

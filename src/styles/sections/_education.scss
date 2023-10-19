@@ -46,11 +46,11 @@
     list-style-type: none;
     display: flex;
     flex-direction: column;
-    gap: 5rem;
+    gap: 2.5rem;
     margin-bottom: 2rem;
 
     @include _769 {
-      padding: 5.5rem;
+      padding: 5.5rem 3.5rem;
       border-radius: 4rem;
       flex-direction: row;
       gap: 0;
@@ -59,7 +59,6 @@
     }
   }
 
-  &__advantage {}
 
   &__cta {
     background-color: $color-bg-white;
