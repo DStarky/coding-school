@@ -2,13 +2,13 @@
   max-width: 76rem;
   margin: 0 auto;
   position: relative;
-  // z-index: 0;
+  z-index: 0;
 
   &::after {
     content: '123';
     width: 100%;
     height: 50%;
-    background-color: #000;
+    background-color: rgba(25, 26, 38, 0.38);;
     position: absolute;
     border-radius: 50%;
     filter: blur(174px);
