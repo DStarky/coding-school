@@ -63,14 +63,26 @@
 
 
   &__cta {
+    // max-width: 30rem;
+    max-width: 53rem;
+    margin: 0 auto;
     background-color: $color-bg-white;
     display: flex;
-    flex-direction: column;
-    padding: 1rem 2.5rem 2rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    // flex-direction: column;
+    padding: 1.5rem 2.5rem 2rem;
     border-radius: 3rem;
     margin-bottom: 6rem;
+    gap: 2rem;
+
+    @include _440{
+      padding: 2rem 2.5rem 3rem;
+    }
 
     @include _769 {
+      gap: 2.5rem;
       padding: 1.2rem;
       border-radius: 11rem;
       flex-direction: row;
@@ -78,7 +90,38 @@
     }
   }
 
-  &__button {}
+  &__button {
+    position: relative;
+    align-self: center;
+    font-size: 1.6rem;
+    // flex-grow: 0;
+    flex-shrink: 0;
 
-  &__cta-text {}
+    &::after {
+      content: "";
+      height: 2.4rem;
+      width: 2.4rem;
+      position: absolute;
+      background-image: url(/icons/arrow.svg);
+      background-size: cover;
+      right: 4.5rem;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__cta-text {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 139%;
+    max-width: 25rem;
+    
+    @include _769 {
+      max-width: 21rem;
+      text-align: left;
+      font-size: 1.5rem;
+      line-height: 120%;
+    }
+  }
 }
