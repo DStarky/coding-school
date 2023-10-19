@@ -24,11 +24,13 @@
     flex-direction: column;
     gap: 2rem;
     list-style-type: none;
+    margin-bottom: 7.5rem;
 
     @include _769 {
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
+      margin-bottom: 4rem;
       // gap: 7rem;
     }
   }
@@ -65,5 +67,22 @@
       text-align: left;
       max-width: 30rem;
     }
+  }
+
+  &__table-scroll {
+    width: 100%;
+    overflow: auto;
+  }
+
+
+  &__table-wrapper {
+    padding: 2rem;
+    background-color: $color-bg-white;
+    border-radius: 3rem;
+    min-width: 72rem;
+  }
+
+  &__table {
+    // width: 100%;
   }
 }
