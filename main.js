@@ -7,20 +7,21 @@ import { playVideo } from './src/scripts/playVideo';
 const menu = document.querySelector('.menu');
 const navigation = document.querySelector('.navigation');
 const entryButton = document.querySelector('.header__button');
+const backdrop = document.querySelector('.backdrop');
 
 
 
 menu.addEventListener('click', () => {
-  toggleMenu(menu, navigation, entryButton)
+  toggleMenu(menu, navigation, entryButton, backdrop)
 })
 
 document.addEventListener('click', function (event) {
   const { target } = event;
 
   if (!(navigation.contains(target) || menu.contains(target))) {
-    closeMenu(menu, navigation, entryButton);
+    closeMenu(menu, navigation, entryButton, backdrop);
   } else if (target.tagName === 'A' || target.tagName === 'BUTTON' && navigation.contains(target)) {
-    closeMenu(menu, navigation, entryButton);
+    closeMenu(menu, navigation, entryButton, backdrop);
   }
 });
 
