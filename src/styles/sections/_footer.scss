@@ -50,6 +50,16 @@
     @include _769 {
       justify-content: start;
     }
+
+    a {
+      transition: translate 0.3s ease;
+
+      @media (any-hover: hover) {
+        &:hover {
+          translate: 0 -4px;
+        }
+      }
+    }
   }
 
   &__navigation-list {
