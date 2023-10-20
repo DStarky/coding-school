@@ -12,8 +12,19 @@
     align-items: center;
   }
 
-  &__task{
-    
+  &__task {
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    background-color: $color-bg-gray;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+
+    @include _769 {
+      margin-bottom: 2.5rem;
+      font-weight: 400;
+      align-self: start;
+    }
   }
 
   &__title {
@@ -51,29 +62,109 @@
     text-align: center;
     margin: 0 auto;
     font-size: 1.4rem;
-    padding: 2rem 7rem 2rem 4rem;
+    padding: 1.5rem 7rem 1.5rem 4rem;
 
     @include _769 {
-      font-size: 2rem;
+      align-self: end;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    @include _769 {
+      flex-direction: row;
+    }
+  }
+
+  &__option-btn {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 96.688%;
+    letter-spacing: -0.45px;
+
+    @include _769 {
+      flex-direction: row;
+    }
+
+    &::after {
+      content: '';
+      height: 1.6rem;
+      width: 2rem;
+      position: absolute;
+      background-image: url('/icons/arrow-front.svg');
+      background-size: cover;
+      right: 3rem;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__options {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__option {
+
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__option-text {
+    font-size: 1.2rem;
+    line-height: 200%;
+    font-weight: 500;
+  }
+
+  &__radio {
+    display: none;
+  }
+
+  &__radio-box {
+    width: 2.2rem;
+    height: 2.2rem;
+    background: $color-bg-gray;
+    border-radius: 0.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-shrink: 0;
+  }
+
+  &__radio:checked+&__radio-box {
+    &::after {
+      content: '';
+      position: absolute;
+      height: 1.4rem;
+      width: 1.4rem;
+      background-color: $color-bg-orange;
+      border-radius: 0.4rem;
     }
   }
 }
 
-.fancybox__content {
+
+.graph-modal__container {
+
+  width: auto;
+  margin: 0;
   background-color: transparent;
-  padding: 1rem;
+  border-radius: 0;
+  padding: 0;
+
 }
 
-.is-compact .fancybox__content>.f-button.is-close-btn {
-  top: 2rem;
-  right: 2rem;
-  background: none;
-  color: $color-font-gray;
-}
-
-.fancybox__content>.f-button.is-close-btn {
-  top: 2.5rem;
-  right: 2.5rem;
-  background: none;
-  color: $color-font-gray;
+.graph-modal__close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
 }

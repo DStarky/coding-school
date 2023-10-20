@@ -1,5 +1,5 @@
-import { Fancybox } from "@fancyapps/ui";
-import "@fancyapps/ui/dist/fancybox/fancybox.css";
+import './src/libs/graph-modal/graph-modal.min.css';
+import './src/libs/graph-modal/graph-modal.min.js';
 
 import './src/styles/style.scss'
 import { toggleMenu } from './src/scripts/toggleMenu';
@@ -28,9 +28,9 @@ document.addEventListener('click', function (event) {
   }
 });
 
-Fancybox.bind("[data-fancybox]", {
-  // Your custom options
-});
+
 
 gridLastChild();
 playVideo();
+
+const modal = new GraphModal();

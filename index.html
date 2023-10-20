@@ -38,7 +38,7 @@
         сертификат
       </h1>
       <p class="hero__text">Пройдите тестирование, чтобы получить доступ к бесплатным вводным урокам</p>
-      <a class="hero__btn btn" data-fancybox data-src="#start-test">Пройти тестирование</a>
+      <a class="hero__btn btn" data-graph-path="first">Пройти тестирование</a>
     </div>
   </section>
   <section class="technology">
@@ -341,36 +341,95 @@
     </div>
   </footer>
   <script type="module" src="/main.js"></script>
-  <div id="start-test" style="display: none;">
-    <article class="test">
-      <div class="test__container">
-        <div class="test__flex">
-          <h5 class="test__title">Перед тем как приступить к обучению непобходимо пройти небольшой тест</h5>
-          <p class="test__text">Тест состоит из 4 заданий на логическое мышление и прочие навыки, необходимые
-            программисту.
-            Задания не самые простые. Но
-            ни в коем случае не выбирайте ответы наугад. Если вы не можете дать правильный ответ – выбирайте пункт «Не
-            знаю».</p>
-          <a class="test__btn btn" data-fancybox data-src="#task-1">Начать тест</a>
-        </div>
+  <div class="graph-modal">
+    <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="first">
+      <button class="btn-reset graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
+      <div class="graph-modal__content">
+        <article class="test">
+          <div class="test__container">
+            <div class="test__flex">
+              <h5 class="test__title">Перед тем как приступить к обучению непобходимо пройти небольшой тест</h5>
+              <p class="test__text">Тест состоит из 4 заданий на логическое мышление и прочие навыки, необходимые
+                программисту.
+                Задания не самые простые. Но
+                ни в коем случае не выбирайте ответы наугад. Если вы не можете дать правильный ответ – выбирайте пункт
+                «Не
+                знаю».</p>
+              <a class="test__btn btn" data-graph-path="second">Начать тест</a>
+            </div>
+          </div>
+        </article>
       </div>
-    </article>
-  </div>
-  <div id="task-1" style="display: none;">
-    <article class="test">
-      <div class="test__container">
-        <div class="test__flex">
-          <div class="test__task">Задание №1</div>
-          <p class="test__text">Тест состоит из 4 заданий на логическое мышление и прочие навыки, необходимые
-            программисту.
-            Задания не самые простые. Но
-            ни в коем случае не выбирайте ответы наугад. Если вы не можете дать правильный ответ – выбирайте пункт «Не
-            знаю».</p>
-          <a class="test__btn btn" data-fancybox data-src="#task-1">Начать тест</a>
-        </div>
+    </div>
+    <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="second">
+      <button class="btn-reset graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
+      <div class="graph-modal__content">
+        <article class="test">
+          <div class="test__container">
+            <div class="test__flex">
+              <div class="test__task">Задание №1</div>
+              <p class="test__text">Иван Иванович купил в магазине у дома несколько пачек макарон по 40 рублей,
+                несколько
+                пачек печенья по 32 рубля и 2
+                пакета сока. Продавщица сказала, что с него 525 рублей (скидка не предусмотрена). Иван Иванович заявил,
+                что
+                его пытаются
+                обсчитать. Действительно ли продавщица ошиблась в подсчетах?</p>
+              <div class="test__bottom">
+                <div class="test__options">
+                  <label class="test__option">
+                    <input type="radio" name="answer" class="test__radio" value="yes">
+                    <div class="test__radio-box"></div>
+                    <span class="test__option-text">Да, сумма явно неверная</span>
+                  </label>
+                  <label class="test__option">
+                    <input type="radio" name="answer" class="test__radio" value="no">
+                    <div class="test__radio-box"></div>
+                    <span class="test__option-text">Нет, такая сумма вполне могла получиться</span>
+                  </label>
+                  <label class="test__option">
+                    <input type="radio" name="answer" class="test__radio" value="unknown">
+                    <div class="test__radio-box"></div>
+                    <span class="test__option-text">Не знаю, не получается решить</span>
+                  </label>
+                </div>
+                <a class="test__btn btn test__option-btn" data-graph-path="third">Ответить</a>
+              </div>
+            </div>
+          </div>
+        </article>
       </div>
-    </article>
+    </div>
+    <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="third">
+      <button class="btn-reset graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
+      <div class="graph-modal__content">
+        <article class="test">
+          <div class="test__container">
+            <div class="test__flex">
+              <div class="test__task">Задание №1</div>
+              <h5 class="test__title">Правильно! С логикой у вас все отлично</h5>
+              <p class="test__text">Так как 1 пачка макарон стоит 40 рублей, то любое количество пачек будет стоить
+                четное
+                число рублей. Аналогично с
+                печеньем. А так как пакетов сока ровно 2, то за сок тоже нужно будет отдать четное число рублей.
+                Получается,
+                что ни при
+                каких условиях в результате не может получиться нечетное число 525, а значит, продавщица действительно
+                пыталась
+                обсчитать Ивана Ивановича.
+              </p>
+              <p class="test__text"><strong>
+                  В этом задании проверялось ваше логическое мышление. Это критически важный навык
+                  для
+                  любого программиста.</strong></p>
+              <a class="test__btn btn test__option-btn" data-graph-path="fourth">Далее</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
   </div>
+
 </body>
 
 </html>
