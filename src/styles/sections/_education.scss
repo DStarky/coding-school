@@ -97,17 +97,6 @@
     // flex-grow: 0;
     flex-shrink: 0;
 
-    &::after {
-      content: "";
-      height: 2.4rem;
-      width: 2.4rem;
-      position: absolute;
-      background-image: url(/icons/arrow.svg);
-      background-size: cover;
-      right: 4.5rem;
-      top: 50%;
-      transform: translateY(-50%);
-    }
   }
 
   &__cta-text {

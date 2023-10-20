@@ -39,16 +39,6 @@
     font-size: clamp(1.5rem, 2vw, 2rem);
     position: relative;
 
-    &::after {
-      content: '';
-      height: 2.4rem;
-      width: 2.4rem;
-      position: absolute;
-      background-image: url('/icons/arrow.svg');
-      background-size: cover;
-      right: 4.5rem;
-      top: 50%;
-      transform: translateY(-50%);
-    }
+
   }
 }
