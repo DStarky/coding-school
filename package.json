@@ -12,6 +12,7 @@
     "vite": "^4.4.5"
   },
   "dependencies": {
+    "@fancyapps/ui": "^5.0.24",
     "sass": "^1.68.0"
   }
 }

@@ -1,3 +1,6 @@
+import { Fancybox } from "@fancyapps/ui";
+import "@fancyapps/ui/dist/fancybox/fancybox.css";
+
 import './src/styles/style.scss'
 import { toggleMenu } from './src/scripts/toggleMenu';
 import { closeMenu } from './src/scripts/closeMenu';
@@ -25,6 +28,9 @@ document.addEventListener('click', function (event) {
   }
 });
 
+Fancybox.bind("[data-fancybox]", {
+  // Your custom options
+});
 
 gridLastChild();
 playVideo();
