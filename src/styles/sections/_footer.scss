@@ -1,0 +1,164 @@
+.footer {
+
+  &__container {}
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    @include _769 {
+      display: grid;
+      grid-template-columns: 60% 20% 20%;
+      align-items: start;
+      text-align-last: left;
+    }
+  }
+
+  &__logo {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 3rem;
+
+    @include _769 {
+      margin-bottom: 4rem;
+      text-align: left;
+    }
+
+    img {
+      width: 8.7rem;
+    }
+  }
+
+  &__text-logo {
+    font-size: 1.5rem;
+    max-width: 15rem;
+    color: $color-font-gray;
+
+    @include _769 {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__social {
+    display: flex;
+    gap: 1.6rem;
+    margin-bottom: 4rem;
+    justify-content: center;
+    align-items: center;
+
+    @include _769 {
+      justify-content: start;
+    }
+  }
+
+  &__navigation {}
+
+  &__navigation-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    margin-bottom: 4rem;
+
+    @include _769 {
+      margin-bottom: 0;
+    }
+  }
+
+  &__navigation-item {}
+
+  &__navigation-link {
+    font-size: 1.3rem;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: $color-bg-orange;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  &__links {
+    margin-bottom: 3.5rem;
+  }
+
+  &__link {
+
+    display: block;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: $color-bg-orange;
+    }
+
+    &-blue {
+      color: $color-font-blue;
+      margin-bottom: 1rem;
+
+    }
+
+
+  }
+
+  &__content {
+    margin-bottom: 3rem;
+
+    @include _769 {
+      margin-bottom: 0;
+    }
+  }
+
+  &__legal {
+    color: $color-font-gray;
+    font-size: 1.3rem;
+    line-height: 176%;
+  }
+
+  &__hr {
+    width: 100%;
+
+    @include _769 {
+      margin-top: 5rem;
+      grid-column: 1 / -1;
+    }
+  }
+
+  &__bottom {
+    text-align: center;
+    color: $color-font-gray;
+    margin-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    font-size: clamp(1.2rem, 1.5vw, 1.6rem);
+
+    @include _769 {
+      display: grid;
+      align-items: center;
+      grid-template-columns: 46% 27% 27%;
+    }
+  }
+
+  &__copywrite {
+    margin-bottom: 2rem;
+    justify-self: start;
+  }
+
+  &__bottom-link {
+    display: block;
+    margin-bottom: 1rem;
+    justify-self: end;
+
+    @media (any-hover: hover) {
+      &:hover {
+        color: $color-bg-orange;
+      }
+    }
+  }
+}
