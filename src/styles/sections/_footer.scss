@@ -1,18 +1,16 @@
 .footer {
 
-  &__container {}
-
   &__top {
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     text-align: center;
 
     @include _769 {
+      align-items: start;
       display: grid;
       grid-template-columns: 60% 20% 20%;
-      align-items: start;
       text-align-last: left;
     }
   }
@@ -33,9 +31,9 @@
   }
 
   &__text-logo {
+    color: $color-font-gray;
     font-size: 1.5rem;
     max-width: 15rem;
-    color: $color-font-gray;
 
     @include _769 {
       font-size: 1.6rem;
@@ -43,32 +41,28 @@
   }
 
   &__social {
+    align-items: center;
     display: flex;
     gap: 1.6rem;
-    margin-bottom: 4rem;
     justify-content: center;
-    align-items: center;
+    margin-bottom: 4rem;
 
     @include _769 {
       justify-content: start;
     }
   }
 
-  &__navigation {}
-
   &__navigation-list {
-    list-style-type: none;
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
+    list-style-type: none;
     margin-bottom: 4rem;
 
     @include _769 {
       margin-bottom: 0;
     }
   }
-
-  &__navigation-item {}
 
   &__navigation-link {
     font-size: 1.3rem;
@@ -82,8 +76,8 @@
   &__contacts {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     height: 100%;
+    justify-content: space-between;
   }
 
   &__links {
@@ -102,10 +96,7 @@
     &-blue {
       color: $color-font-blue;
       margin-bottom: 1rem;
-
     }
-
-
   }
 
   &__content {
@@ -126,34 +117,34 @@
     width: 100%;
 
     @include _769 {
-      margin-top: 5rem;
       grid-column: 1 / -1;
+      margin-top: 5rem;
     }
   }
 
   &__bottom {
-    text-align: center;
     color: $color-font-gray;
+    font-size: clamp(1.2rem, 1.5vw, 1.6rem);
     margin-top: 2.5rem;
     padding-bottom: 2.5rem;
-    font-size: clamp(1.2rem, 1.5vw, 1.6rem);
+    text-align: center;
 
     @include _769 {
-      display: grid;
       align-items: center;
+      display: grid;
       grid-template-columns: 46% 27% 27%;
     }
   }
 
   &__copywrite {
-    margin-bottom: 2rem;
     justify-self: start;
+    margin-bottom: 2rem;
   }
 
   &__bottom-link {
     display: block;
-    margin-bottom: 1rem;
     justify-self: end;
+    margin-bottom: 1rem;
 
     @media (any-hover: hover) {
       &:hover {
