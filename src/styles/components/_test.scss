@@ -3,14 +3,48 @@
   padding: 4.5rem 2rem 4rem;
   border-radius: 3rem;
   width: 90%;
+  visibility: hidden;
+  opacity: 0;
 
   @include _769 {
     max-width: 74rem;
   }
 
+  &__close-button {
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+    background: transparent;
+    border: none;
+    outline: none;
 
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 2px;
+      height: 16px;
+      background-color: rgba(188, 188, 188, 1);
+      rotate: 45deg;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 2px;
+      height: 16px;
+      rotate: -45deg;
+      background-color: rgba(188, 188, 188, 1);
+    }
+  }
 
   &__flex {
+    // width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -60,6 +94,8 @@
       margin-bottom: 2rem;
       font-size: 1.5rem;
       line-height: 133%;
+      text-align: left;
+      max-width: 100%;
     }
   }
 
@@ -75,6 +111,7 @@
   }
 
   &__bottom {
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -89,9 +126,12 @@
     font-weight: 500;
     line-height: 96.688%;
     letter-spacing: -0.45px;
+    align-self: end;
 
     @include _769 {
       flex-direction: row;
+      margin-left: auto;
+      margin-right: 0;
     }
 
     &::after {

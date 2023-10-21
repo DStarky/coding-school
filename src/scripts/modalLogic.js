@@ -6,6 +6,7 @@ export const modalLogic = () => {
   const body = document.querySelector('body');
   const modals = document.querySelectorAll('.modal');
   const backdrop = document.querySelector('.backdrop');
+  const closeButtons = document.querySelectorAll('.test__close-button');
 
   const startTestButton = document.getElementById('to-2-modal');
   const answerButton = document.getElementById('to-3-modal');
@@ -33,6 +34,9 @@ export const modalLogic = () => {
 
   // Логика закрытия модального окна по клику вне зоны
   backdrop.addEventListener('click', closeModalHandler);
+  
+  // И по клику на крестик
+  closeButtons.forEach(button => button.addEventListener('click', closeModalHandler));
 
   // Получаем все кнопки, которые открывают стартовое модальное окно
   const buttonsForStartTest = document.querySelectorAll('.start-test-button');
