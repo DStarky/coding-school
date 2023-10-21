@@ -151,35 +151,3 @@
     }
   }
 }
-
-
-.graph-modal__container {
-
-  // width: auto;
-  // margin: 0;
-  background-color: transparent;
-  border-radius: 0;
-  padding: 0;
-
-  @include _769 {
-    width: auto;
-  }
-
-}
-
-.graph-modal__close {
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  outline: none;
-  border: none;
-
-  &:focus-visible {
-    outline: none;
-    border: none;
-  }
-}
-
-.graph-modal {
-  background-color: rgba(34, 37, 59, 0.9);
-}

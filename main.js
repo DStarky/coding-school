@@ -1,11 +1,9 @@
-import './src/libs/graph-modal/graph-modal.min.css';
-import './src/libs/graph-modal/graph-modal.min.js';
-
 import './src/styles/style.scss'
 import { toggleMenu } from './src/scripts/toggleMenu';
 import { closeMenu } from './src/scripts/closeMenu';
 import { gridLastChild } from './src/scripts/gridLastChild';
 import { playVideo } from './src/scripts/playVideo';
+import { modalLogic } from './src/scripts/modalLogic';
 
 const menu = document.querySelector('.menu');
 const navigation = document.querySelector('.navigation');
@@ -19,12 +17,13 @@ menu.addEventListener('click', () => {
 })
 
 document.addEventListener('click', function (event) {
-  const { target } = event;
-
-  if (!(navigation.contains(target) || menu.contains(target))) {
-    closeMenu(menu, navigation, entryButton, backdrop);
-  } else if (target.tagName === 'A' || target.tagName === 'BUTTON' && navigation.contains(target)) {
-    closeMenu(menu, navigation, entryButton, backdrop);
+  if (menu.classList.contains('change')) {
+    const { target } = event;
+    if (!(navigation.contains(target) || menu.contains(target))) {
+      closeMenu(menu, navigation, entryButton, backdrop);
+    } else if (target.tagName === 'A' || target.tagName === 'BUTTON' && navigation.contains(target)) {
+      closeMenu(menu, navigation, entryButton, backdrop);
+    }
   }
 });
 
@@ -32,5 +31,4 @@ document.addEventListener('click', function (event) {
 
 gridLastChild();
 playVideo();
-
-const modal = new GraphModal();
+modalLogic();
